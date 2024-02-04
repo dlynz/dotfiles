@@ -19,7 +19,7 @@ local plugins = {
                 arg = "leetcode.nvim",
 
                 --@type lc.lang
-                lang = "cpp",
+                lang = "python",
 
                 cn = { -- leetcode.cn
                     enabled = false, --@type boolean
@@ -125,7 +125,10 @@ local plugins = {
             ensure_installed = {
                 "clangd",
                 "clang-format",
-                "pyright",
+                "python-lsp-server",
+                "css-lsp",
+                "html-lsp",
+                "tailwindcss",
             }
         }
     },
