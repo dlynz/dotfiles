@@ -1,5 +1,18 @@
 local plugins = {
     {
+        "jackMort/ChatGPT.nvim",
+        event = "VeryLazy",
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "nvim-telescope/telescope.nvim",
+            "nvim-lua/plenary.nvim", -- required by telescope
+            "folke/trouble.nvim",
+        },
+        config = function()
+            require("chatgpt").setup()
+        end
+    },
+    {
         "kawre/leetcode.nvim",
         lazy = false,
         build = ":TSUpdate html",
@@ -128,10 +141,10 @@ local plugins = {
                 "python-lsp-server",
                 "css-lsp",
                 "html-lsp",
-                "tailwindcss",
+                "tailwindcss-language-server",
                 "jdtls",
-                "tsserver",
-                "eslint",
+                "typescript-language-server",
+                "eslint-lsp",
             }
         }
     },
