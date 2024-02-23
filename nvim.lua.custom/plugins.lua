@@ -129,6 +129,9 @@ local plugins = {
                 "css-lsp",
                 "html-lsp",
                 "tailwindcss",
+                "jdtls",
+                "tsserver",
+                "eslint",
             }
         }
     },

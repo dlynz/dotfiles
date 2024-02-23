@@ -4,7 +4,7 @@ M.ui = {
     theme = 'catppuccin',
     theme_toggle = { "catppuccin", "ayu_light" },
 
-    transparency = true,
+    transparency = false,
 }
 
 M.ui.extended_integrations = {'alpha'}
