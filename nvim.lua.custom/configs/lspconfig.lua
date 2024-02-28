@@ -24,6 +24,7 @@ local servers = {
     "eslint",
     "cssls",
     "html",
+    "bashls"
 }
 
 for _, lsp in ipairs(servers) do

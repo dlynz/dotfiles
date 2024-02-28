@@ -145,6 +145,7 @@ local plugins = {
                 "jdtls",
                 "typescript-language-server",
                 "eslint-lsp",
+                "bash-language-server",
             }
         }
     },
