@@ -7,6 +7,7 @@ vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 
 vim.opt.relativenumber = true
+vim.opt.conceallevel = 2
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "assembly",
