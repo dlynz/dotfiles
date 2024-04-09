@@ -9,7 +9,7 @@ local plugins = { "epwalsh/obsidian.nvim",
     workspaces = {
       {
         name = "aes",
-        path = "~/Documents/aes/",
+        path = "~/Documents/obsidian/aes/",
       },
     },
   },
