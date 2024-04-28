@@ -6,6 +6,8 @@ vim.keymap.set("n", "<C-u>", "<C-u> zz")
 vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 vim.opt.relativenumber = true
 vim.opt.conceallevel = 2
 
