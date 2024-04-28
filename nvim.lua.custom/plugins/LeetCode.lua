@@ -1,7 +1,6 @@
 local plugins = {
     {
         "kawre/leetcode.nvim",
-        lazy = false,
         build = ":TSUpdate html",
         dependencies = {
             "nvim-telescope/telescope.nvim",
