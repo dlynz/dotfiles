@@ -1,6 +1,7 @@
 local plugins = {
     {
         "kawre/leetcode.nvim",
+        lazy = false,
         build = ":TSUpdate html",
         dependencies = {
             "nvim-telescope/telescope.nvim",
@@ -13,7 +14,7 @@ local plugins = {
             "nvim-tree/nvim-web-devicons",
         },
         opts = {
-            lang = "python",
+            lang = "Python3",
         },
         config = function()
             require("leetcode").setup()
