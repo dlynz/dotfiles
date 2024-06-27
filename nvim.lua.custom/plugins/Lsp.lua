@@ -8,6 +8,7 @@ local plugins = {
                 "python-lsp-server",
                 "css-lsp",
                 "html-lsp",
+                "sqlls",
                 "tailwindcss-language-server",
                 "jdtls",
                 "typescript-language-server",
