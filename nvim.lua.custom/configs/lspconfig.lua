@@ -20,6 +20,7 @@ lspconfig.pyright.setup({
 
 local servers = {
     "tailwindcss",
+    "sqls",
     "tsserver",
     "jdtls",
     "eslint",
