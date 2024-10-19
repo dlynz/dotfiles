@@ -2,8 +2,9 @@
 local M = {}
 M.ui = {
     theme = 'catppuccin',
-    theme_toggle = { "catppuccin", "ayu_light" },
-
+    tabufline = {
+    enabled= false
+    },
     transparency = false,
 }
 
