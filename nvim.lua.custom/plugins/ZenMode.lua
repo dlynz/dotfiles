@@ -3,10 +3,12 @@ local plugins = {
         "folke/zen-mode.nvim",
         cmd = "ZenMode",
         init = function ()
-            local wk = require("which-key")
-            wk.register({
-                ["<leader>zn"] = { ":ZenMode<CR>", "ZenMode" },
-            }, { mode = "n" })
+            -- local wk = require("which-key")
+            -- wk.register(
+            --     {
+            --         { "", "<leader>zn", desc = ":ZenMode<CR>" },
+            --     }
+            -- )
         end,
         opts = {
             window = {

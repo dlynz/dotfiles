@@ -5,6 +5,7 @@ local plugin = {
         "javascriptreact",
         "typescript",
         "typescriptreact",
+        "html",
     },
     config = function()
         require("nvim-ts-autotag").setup()
