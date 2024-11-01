@@ -7,6 +7,15 @@ local plugins = {
             require'alpha'.setup(require'alpha.themes.dashboard'.config)
             local alpha = require("alpha")
             local dashboard = require("alpha.themes.dashboard")
+            local function footer()
+                local stats = require("lazy").stats()
+                local loaded = stats.loaded
+                local count = stats.count
+                local datetime = os.date(" %d-%m-%Y   %I:%M:%S %p")
+
+                return datetime .. "   " .. loaded .. "/" .. count .. " plugins loaded"
+            end
+            dashboard.section.footer.opts.hl = "AlphaButtons"
             dashboard.section.header.val = {
                 --[["                               ....                                         ",
                 "                            ,;;'''';;,                    ,;;;;,            ",
@@ -346,12 +355,15 @@ local plugins = {
 
             dashboard.section.buttons.val = {
             dashboard.button("e ", "  > New File", "<cmd>ene<CR>"),
-            dashboard.button("ctrl n ", "  > File explorer", "<cmd>NvimTreeToggle<CR>"),
+            dashboard.button("ctrl n ", "  > File Explorer", "<cmd>NvimTreeToggle<CR>"),
             dashboard.button("space ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
             dashboard.button("space fr", "  > Find Recent", "<cmd>Telescope oldfiles<CR>"),
             dashboard.button("space s ", "🖫  > Saved Files", "<cmd>Telescope oldfiles<CR>"),
             dashboard.button("q ", "  > Quit", "<cmd>qa<CR>"),
         }
+
+        dashboard.section.footer.val = footer()
+
         alpha.setup(dashboard.opts)
 
         vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
