@@ -8,6 +8,5 @@ M.ui = {
     transparency = false,
 }
 
-M.ui.extended_integrations = {'alpha'}
 M.plugins = 'custom.plugins'
 return M
