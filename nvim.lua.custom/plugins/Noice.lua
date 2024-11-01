@@ -35,6 +35,7 @@ local plugins = {
                     { filter = { find = "E37" }, skip = true },
                 }
             })
+            vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = "#908fd9", bg = "NONE" })
         end
     },
 }
