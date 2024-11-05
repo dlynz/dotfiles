@@ -11,6 +11,8 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.opt.relativenumber = true
 vim.opt.conceallevel = 2
 
+vim.diagnostic.config({ virtual_text = false })
+
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "assembly",
     callback = function()
