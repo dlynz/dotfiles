@@ -33,6 +33,13 @@ local plugins = {
                     { filter = { event = "emsg", find = "E20" }, skip = true },
                     { filter = { find = "No signature help" }, skip = true },
                     { filter = { find = "E37" }, skip = true },
+
+                    -- Filter out undo/redo messages
+                    { filter = { event = "msg_show", find = "Undo" }, view = "mini" },
+                    { filter = { event = "msg_show", find = "Redo" }, view = "mini" },
+                    { filter = { event = "msg_show", find = "Already at newest change" }, view = "mini" },
+                    { filter = { event = "msg_show", find = "Already at oldest change" }, view = "mini" },
+                    { filter = { event = "msg_show", find = "%d+ changes; before #", }, view = "mini" },
                 }
             })
             vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = "#908fd9", bg = "NONE" })
