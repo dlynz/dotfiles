@@ -27,7 +27,8 @@ local servers = {
     "clangd",
     "cssls",
     "html",
-    "bashls"
+    "bashls",
+    "rust_analyzer"
 }
 
 for _, lsp in ipairs(servers) do

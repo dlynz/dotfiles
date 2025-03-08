@@ -13,6 +13,7 @@ local plugins = {
                 "jdtls",
                 "typescript-language-server",
                 "eslint-lsp",
+                "rust-analyzer",
                 "bash-language-server",
             }
         }
