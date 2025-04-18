@@ -1,3 +1,4 @@
+vim.deprecate = function() end
 vim.opt.colorcolumn = "80"
 
 vim.keymap.set("n", "<C-d>", "<C-d> zz")
