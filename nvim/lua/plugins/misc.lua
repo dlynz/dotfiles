@@ -1,7 +1,7 @@
 local plugins = {
     {
         "andweeb/presence.nvim",
-        lazy = false,
+        lazy = true,
     },
     {
         "folke/todo-comments.nvim",
@@ -11,18 +11,11 @@ local plugins = {
     },
     {
         "ThePrimeagen/vim-be-good",
-        lazy = false,
+        lazy = true,
     },
     {
         "christoomey/vim-tmux-navigator",
-        lazy = false,
-    },
-    {
-        "jose-elias-alvarez/null-ls.nvim",
-        event = "VeryLazy",
-        opts = function()
-            return require "custom.configs.null-ls"
-        end,
+        lazy = true,
     },
 }
 

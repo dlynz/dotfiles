@@ -14,7 +14,8 @@ local plugins = {
             "nvim-tree/nvim-web-devicons",
         },
         opts = {
-            lang = "Python3",
+            ---@type lc.lang
+            lang = "python3"
         },
         config = function()
             require("leetcode").setup()

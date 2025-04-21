@@ -40,6 +40,7 @@ local plugins = {
                     { filter = { event = "msg_show", find = "Already at newest change" }, view = "mini" },
                     { filter = { event = "msg_show", find = "Already at oldest change" }, view = "mini" },
                     { filter = { event = "msg_show", find = "%d+ changes; before #", }, view = "mini" },
+                    { filter = { event = "msg_show", find = "Autosave", }, view = "mini" },
                 }
             })
             vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = "#908fd9", bg = "NONE" })
